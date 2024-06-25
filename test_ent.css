@@ -1,0 +1,431 @@
+@import  'https://rca.ent.sirsidynix.net.uk/client/css/vse/open.css'; /* SITEADDRESS is the actual URL to Enterprise. This copies in the default styles. */
+
+/* Insert the image for the background in the parentheses */
+body{
+background: #ffffff;
+font-family: "Benton Sans Light", "BentonSans-Light", "Helvetica Neue", Arial, Helvetica, Sans-Serif!important;
+}
+/*************************** HEADER AREA ******************************/
+
+/* Increase header height if using 125px or 150px - default is 135px - this now controls the position of the content */
+.header {
+height: 100px;
+	background-color:#000;
+}
+
+.headerWrapper {
+	background-color:#000;
+	max-height:75px;
+}
+
+a, a:visited, a:active {
+color: #000000; 
+text-decoration: none;
+}
+a:hover, a[href^="mailto"]:hover{
+color: #ff5d1c !important; 
+}
+
+/* menu links color property: color */
+
+.menuLink a, .menuLink a:visited, .menuLink a:active, .loginLink a, .menuActive a, #lpMainLink {
+color: #fff;	
+}
+.menuLink a:hover, .loginLink a:hover, #lpMainLink, .quicksearch_display_button:hover {
+color: #ff5d1c;	
+}
+
+.welcome {
+ color: #000000;
+}
+/* language option color property: color */
+
+.lpdropdown a:visited, .lpdropdown a:active {
+color: #000000;
+}
+.lpdropdown a:hover {
+color: #ff5d1c;
+}
+.nytimes_listbar {
+height: 30px;
+width: 500px;
+background: #000;
+border-radius: 0 0 0 0;
+-moz-border-radius: 0 0 0 0;
+-webkit-border-radius: 0 0 0 0;
+-khtml-border-radius: 0 0 0 0;
+position: relative;
+}
+
+
+
+/* ADA fix  - remove*/
+
+.ada_link {
+  display: none;
+ }
+
+#adaModeDiv {
+  display: none;
+}
+
+#adaModeDiv + .pipeSeparator {
+    display: none;
+}
+
+
+/************************** SEARCH BOX AREA **************************************/
+
+/* reposition search wrapper - default is 100px - add 25 or 50 depending on background chosen */
+#searchBoxWrapper {
+background-color: #000;
+top: 100px;
+border-radius: 0px
+
+}
+
+select, input
+{
+border: none;
+background: none;
+
+}
+
+/* fix search bar in IE8
+.extendedSearchBoxDiv #q {
+width: 565px;
+}
+ */
+
+/* switch the home image with a new one created in Photoshop 
+*/
+#searchBoxHomeLink img {
+  visibility: hidden;
+}
+
+#searchBoxHomeLink a {
+  background: url(https://library.rca.ac.uk/custom/web/home_chev_black.png) repeat-x top left;
+  display: block;
+  height: 32px;
+  width: 32px;
+}
+
+
+/* Set color of search drop-down menus */
+
+#searchBox .dropDown {
+ /*background-color: #D5EDFD ;*/
+ color: #000000 ;
+ border-color: ;
+ border-radius: 0px;
+} 
+#searchBox .dropDown:focus {
+ background-color: #fff;
+ color: #000000 ;
+ border-color: ;
+ border-radius: 0px;
+}
+
+/* Set color of search box */
+
+
+#q {
+background-color: #ffffff;
+color: ;
+border-color: #000000;
+border-radius: 0px;
+border: 0 0 0 0;
+padding-bottom: 5px;
+
+}
+
+#q:focus {
+background-color: #ffffff;
+color: ;
+border-color: #000000;
+border-radius: 0px;
+padding-bottom: 5px;
+}
+
+
+
+/* Advanced Search Link */
+
+#searchBoxAdvancedLink a {
+color: ;
+}
+#searchBoxAdvancedLink a:hover {
+color: #ff5d1c;
+}
+
+/* Search Button */
+
+#searchButton {
+background-color: #000;
+color: #FFFFFF;
+border-radius: 0px;
+}
+
+#searchButton:hover {
+background-color: #ff5d1c;
+color: #090909;
+border-radius: 0px;
+}
+
+
+ 
+/* repositions the search suggestions drop-down, add enough pixels to fix if you increase the height of the search bar.
+
+#dropDown {
+	left: 496px !important;
+	top: 30px !important;
+}
+
+#dropDown, x:-moz-any-link, x:default {
+	left: 484px !important;
+	top: 32px !important;
+}
+*/
+
+
+/******************** CONTENT AREA ***************************************/
+
+#content {
+margin-top: ;
+}
+
+/********************** GENERAL BUTTONS **********************************/
+
+.button {
+ background-color: #000;
+ color: #FFFFFF;
+ border-radius: 0px;
+ font-weight: normal;
+}
+
+.button:hover {
+ background-color: #ff5d1c;
+ color: #FFFFFF;
+ border-radius: 0px;
+}
+.loginButton {
+ background-color: #000;
+ color: #FFFFFF;
+ border-radius: 0px;
+}
+
+.loginButton:hover {
+ background-color: #ff5d1c;
+ color: #FFFFFF;
+ border-radius: 0px;
+}
+
+
+.formatTypeIcon-BOOK {
+    background-image: url(book.png);
+}
+
+.formatTypeIcon-VISUAL {
+  background-image: url(dvd.png);
+}
+
+.formatTypeIcon-CR {
+  background-image: url(magazine.png);
+}
+
+/*********************** FOOTER AREA ***************************************************/
+
+#footer {
+background-color: #000;
+color: ;
+}
+
+#copyright {
+display:none;
+}
+
+/************************ CUSTOM STYLES and FIXES ***************************************/
+
+/* Search display fixes */
+.displayElementText.GEOGRAPHIC_TERM {
+display: block;
+}
+.displayElementText.ADDED_AUTHOR {
+display: block;
+}
+.displayElementText.ADDED_CORPORATE_AUTHOR {
+display: block;
+}
+.displayElementText.ADDED_CONFERENCE_AUTHOR {
+display: block;
+}
+.displayElementText.GENRE_TERM {
+display: block;
+}
+.displayElementText.PERSONAL_SUBJECT {
+display: block;
+}
+.displayElementText.GENERAL_NOTE {
+display: block;
+}
+.displayElementText.ELECTRONIC_ACCESS > a {
+display: block;
+}
+select {
+    border:0;
+    background-color: #ffffff;
+    border:1px solid #000000;
+    border-radius: 0px;
+   
+}
+
+a[href^="mailto"] { color: #0096ff; text-decoration: none;}
+a[href^="mailto"]:hover { text-decoration: underline;}
+
+/* Facebook fix */
+.fb_iframe_widget_lift {
+overflow: visible !important;
+left: -450px !important;
+margin-right: 100px !important;
+}
+
+/****************** HOLDS FIX ************************/
+
+.noback { 
+min-width: 100%;
+}
+
+/**************** Hide Register Link ****************/
+
+#registration_link {display: none;}
+
+
+/*************** Hide Section Name for Child Rooms *********/
+
+.section_name {
+	display: none;
+}
+/************** Add some text to the Registration form ********/
+#registrationForm:before {
+	content: 'If Visiting Lecturer the do this, If Imperial College Student do the other';
+	visibility:visible;
+	font-style:italic;
+	color:blue;
+}
+
+/***********************Login Box Borders*******************/
+.user_name_input{
+	border:double;
+}
+.password_input{
+	border:double;
+}
+
+.resultsToolbar_wrapper #copacLink {
+    margin-right: 5px;
+    margin-top: 10px;
+    text-align: right;
+}
+.resultsToolbar_wrapper #NALLink {
+    margin-right: 5px;
+    margin-top: 10px;
+    text-align: right;
+}
+.resultsToolbar_wrapper #BLLink {
+    margin-right: 5px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+/*******Hide Renew Button during COVID-19*********/
+
+/*.checkoutsButtons {
+	display:none;
+}*/
+/*twitter widget font*/
+..timeline-Widget{
+	font-family:"Benton Sans Light", "BentonSans-Light", "Helvetica Neue", Arial, Helvetica, Sans-Serif!important;
+}
+
+/*dropdown background colour change*/
+#searchBox .dropDown {
+	background-color:#fff;
+}
+/*hide search box*/
+#searchBox {
+	display:none;
+}
+/*center the New Search Button back to Summon*/
+.quicksearch_display_button {
+    float: none;
+    padding: 4px 8px 0;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Benton Sans Light", "BentonSans-Light", "Helvetica Neue", Arial, Helvetica, Sans-Serif!important;
+}
+
+.quicksearchBar {
+    text-align: center;
+    font-size: 16px;
+    font-family: "Benton Sans Light", "BentonSans-Light", "Helvetica Neue", Arial, Helvetica, Sans-Serif!important;
+}
+/*hide searchboxwrapper as no longer using a search box in enterprise */
+
+#searchBoxWrapper {
+	display:none;
+}
+
+/* amend size of new image*/
+
+.logo_container img {
+    margin-top: 15px;
+    max-height: 32px;
+    width: auto;
+}
+
+/*change colour of item info labels from blue to black*/
+
+.displayElementLabel {
+    color: black;
+}
+
+table.sortable thead  {
+    color: black;
+}
+
+/*******Hide Location although it is needed for shelfmap*****/
+.detailItemsTable_LOCATION {
+	display:none;
+}
+.detailItemsTable_LOCATION {
+	display:none;
+}
+/******Hide Reservation option from Action Drop Down list as it is now available as a button due to Enterprise upgrade****/
+
+/*ul li:last-child {
+   display:none;
+}*/
+
+/*** Make Online Access Link more prominent***/
+.displayElementWrapper .displayElementText.ELECTRONIC_ACCESS a {font-size: 16px; font-weight: 700; color: #3366CC!important}
+.displayElementWrapper .displayElementLabel.ELECTRONIC_ACCESS+a {font-size: 16px; font-weight: 700; color: #3366CC!important}
+
+
+/* bib links display as buttons */
+
+div.displayElementText table a,
+div.displayElementText a:visited {
+    background: url("http://ppll.ent.sirsi.net/custom/web/alert-overlay.png") repeat-x scroll 0% 0% rgb(72, 125, 81);
+    display: block;
+    padding: .4em 1em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    margin: 2px; }
+div.displayElementText a:hover {
+    background-color:#97B99E;
+    text-decoration: none; }
